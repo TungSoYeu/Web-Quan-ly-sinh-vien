@@ -1,15 +1,15 @@
 const sql = require("mssql");
 
 const config = {
-  user: "sa", // thay bằng user SQL Server của bạn
-  password: "12345678", // thay bằng password của bạn
-  server: "localhost", // hoặc "localhost" nếu dùng instance mặc định
-  instanceName: "SQLEXPRESS", // nếu bạn dùng instance khác, bỏ qua nếu dùng instance mặc định
+  user: "sa", 
+  password: "12345678", 
+  server: "localhost", 
+  instanceName: "SQLEXPRESS", 
   database: "StudentManagement",
-  port: 1433, // cổng mặc định của SQL Server
+  port: 1433, 
   options: {
-    encrypt: false, // true nếu dùng Azure
-    trustServerCertificate: true // dùng cho môi trường dev/local
+    encrypt: false, 
+    trustServerCertificate: true 
   }
 };
 
